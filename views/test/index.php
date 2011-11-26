@@ -1,0 +1,1 @@
+Hello world from the view. <?php echo $num ?>

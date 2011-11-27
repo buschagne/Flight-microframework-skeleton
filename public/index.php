@@ -7,5 +7,5 @@ spl_autoload_register('Autoloader::load');
 
 Bootstrap::init();
 
-Flight::route('/', array('Test', 'index'));
+Flight::route('/', array('Index', 'index'));
 Flight::start();

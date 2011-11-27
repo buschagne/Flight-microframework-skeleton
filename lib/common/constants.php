@@ -10,7 +10,7 @@ if(!defined('DS')){
  * Define ROOT_PATH constant to simplify include/require operations
  */
 if(!defined('ROOT_PATH')){
-    define('ROOT_PATH', realpath(__DIR__) . DS . '..');
+    define('ROOT_PATH', realpath(__DIR__ . DS . '..' . DS . '..'));
 }
 
 /**

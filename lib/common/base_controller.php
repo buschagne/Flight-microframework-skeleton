@@ -1,9 +1,18 @@
 <?php
 /**
 * Base controller of the app. All the controllers extends from this one
+* 
+* @package common
 */
 class BaseController extends Flight
 {
+    /**
+     * Constructor of the main controller
+     * 
+     * @return void
+     */
+    public function __construct(){}
+    
     /**
      * Render method to simplify the rendering of the framework
      *

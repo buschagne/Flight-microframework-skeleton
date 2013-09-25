@@ -1,5 +1,6 @@
 <div class="container">
-    <div class="panel">
+    <div class="well">
+        <span class="glyphicon glyphicon-star"></span> Star
         <p>Hello world!</p>
     </div>
 </div>

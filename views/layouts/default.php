@@ -4,12 +4,27 @@
     <meta charset=utf-8 />
     <title><?php echo $layoutTitle ?></title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/master.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="twitter-bootstrap/bootstrap.css" />
-    <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    
+    <link rel="stylesheet" type="text/css" media="screen" href="css/mycss.css" />
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- JQUERY -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <script src="js/myjs.js"></script>
+
 </head>
 <body>
     <?php echo $layoutContent?>
 </body>
 </html>
+    

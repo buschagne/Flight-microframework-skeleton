@@ -20,7 +20,12 @@
     <!-- JQUERY -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     
+    <link rel="stylesheet" type="text/css" media="screen" href="wheel-menu-master/wheelmenu.css" />
+    <script type="text/javascript" src="wheel-menu-master/jquery.wheelmenu.js"></script>
+    
     <script src="js/myjs.js"></script>
+    
+    
 
 </head>
 <body>

@@ -32,7 +32,23 @@ class Index extends BaseController {
             This version is bootstrapped and includes Redbean ORM";
         self::view()->set('description', $description);
 
-        self::render();
+        self::render('layouts/home');
+    }
+    
+    public static function flatUi()//the view file cannot have dashes
+    {
+        self::view()->set('layoutTitle', 'Flat UI');
+        self::view()->set('page_title', 'Flat UI');
+        
+        self::render('layouts/flat');
+    }
+    
+    public static function flatUiTest()//the view file cannot have dashes
+    {
+        self::view()->set('layoutTitle', 'Flat UI');
+        self::view()->set('page_title', 'Flat UI');
+        
+        self::render('layouts/flat');
     }
 
 }

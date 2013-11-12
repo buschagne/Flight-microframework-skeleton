@@ -15,9 +15,9 @@
 
     </head>
     <body>
-        <div class="container">
+        
             <?php echo $layoutContent ?>
-        </div>
+      
         
         
         <!-- Latest compiled and minified JavaScript -->

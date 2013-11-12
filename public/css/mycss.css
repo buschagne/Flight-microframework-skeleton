@@ -1,17 +1,5 @@
 body{
-    margin-top: 250px;
-    background-color: whitesmoke;
+    margin-top: 200px;
+    background-color:   #555;    
 }
 
-#wheelmenua{
-    width: 600px;
-    margin: auto;    
-}
-#wheelmenudiv{
-    
-}
-/* ============ tiles in index2.php ============ */
-
-.tile{ 
-    min-height: 200px;    
-}

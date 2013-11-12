@@ -20,12 +20,14 @@ class Test extends BaseController {
         self::view()->set('num', rand(0, 10));
         //self::view()->set('bean', $data);
         self::view()->set('bean', self::data());
+        self::view()->set('mongobean', self::mongodata());
 
         self::render();
     }
-    
-    function data(){
-        
+
+    function data()
+    {
+
         R::setup('mysql:host=localhost;
         dbname=redbeanphptest', 'root', 'user');
 
@@ -43,8 +45,28 @@ class Test extends BaseController {
         //Display the title
         //echo $leaflet->title;
         //$leaflet->title;
-        
+
         return $leaflet->title;
+    }
+
+    function mongodata()
+    {
+        $data = array();
+
+        try {
+            $connection = new Mongo('mongodb://user:pass@xxxxx.mongolab.com:xxxxx/dbname');
+            $database = $connection->selectDB('dbname');
+            $collection = $database->selectCollection('my_collection');
+        } catch (MongoConnectionException $e) {
+            die("Failed to connect to database " . $e->getMessage());
+        }
+
+        foreach ($collection->find(array('twitter' => 'dddddderickr')) as $record) {
+            //var_dump($record);            
+            $data[]=$record; 
+        }
+        
+        return $data[0]['twitter'];
     }
 
 }

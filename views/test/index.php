@@ -3,6 +3,7 @@
     <div class="panel-body">
         <p>Some random number: <?php echo $num ?></p>
         <p>A bean: <?php echo $bean ?></p>
+        <p>A bean: <?php echo $mongobean ?></p>
     </div>
     <div class="panel-footer"><?php echo $footer ?></div>
 </div>

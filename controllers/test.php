@@ -19,8 +19,16 @@ class Test extends BaseController {
         self::view()->set('page_title', 'Test');
         self::view()->set('num', rand(0, 10));
         //self::view()->set('bean', $data);
+        
+        /* ====================
+         * redbean data
+         * ==================== */
         self::view()->set('bean', self::data());
-        self::view()->set('mongobean', self::mongodata());
+        
+        /* ====================
+         * Mongo data
+         * ==================== */
+        //self::view()->set('mongobean', self::mongodata());
 
         self::render();
     }
@@ -35,6 +43,8 @@ class Test extends BaseController {
         $bean = R::dispense('leaflet');
         $bean->title = '3rd Rant & Rave';
         $bean->description = '3rd Rant & Rave is a new entry on the ...';
+        $bean->description2 = '3rd Rant & Rave is a new entry on the ...';
+        $bean->bla = true;
 
         //Store the bean
         $id = R::store($bean);
